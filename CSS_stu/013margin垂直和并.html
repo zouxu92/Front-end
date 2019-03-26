@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>margin垂直和并</title>
+	<style type="text/css">
+		.box01,.box02{
+			width: 200px;
+			height: 200px;
+			background-color: gold;
+		}
+        
+        /* 当两个垂直外边距相遇时，它们将形成一个外边距，和并后外边距的高度等于两个发生外边距
+        的外边距的高度中较大者*/
+		.box01{
+			margin-bottom: 30px;
+		}
+
+		.box02{
+			margin-top: 20px;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="box01">1</div>
+	<div class="box02">2</div>
+
+</body>
+</html>

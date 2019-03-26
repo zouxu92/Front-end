@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>使用技巧2</title>
+	<style type="text/css">
+		
+		/* body会自带margin=8像素，需要贴边，需要先将body的margin设置0*/
+		body{
+			margin: 0px;
+		}
+
+		.box{
+			width: 202px;
+			height: 156px;
+			background-color: pink;
+			margin:50px auto 0px;
+		}
+
+		.box div{
+			width: 200px;
+			height: 30px;
+			border:1px solid green;
+			background-color: gold;
+			/*border-bottom: 0px;*/ /* 设置底部的border为0去掉中间两条border的一条*/
+		}
+
+		/* 最下面少了一条线，那么就再进行加一条线*/
+		/*.box .last{
+			border-bottom: 1px solid green;
+		}*/
+
+        /* 利用margin负值去掉边框，和并边框*/
+		.box div{
+			margin: -1px;
+
+		}
+
+
+
+
+	</style>
+</head>
+<body>
+     <div class="box">
+     	<div></div>
+     	<div></div>
+     	<div></div>
+     	<div></div>
+     	<div class="last"></div>
+     </div>
+</body>
+</html>

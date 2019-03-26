@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>元素溢出</title>
+	<style type="text/css">
+		
+		.box{
+			width: 240px;
+			height: 200px;
+			border:1px solid #000;
+			margin:50px auto 0px;
+			background-color: gold;
+			line-height: 30px;
+			/* hidden 隐藏溢出元素；
+			   scroll 滚动条形式，不管溢出，都显示滚动条；
+			   visible 默认显示，溢出；
+			   auto:按照溢出的时候显示滚动条，不溢出不显示;
+			*/
+			overflow: auto; 
+
+
+
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="box">1.运营后台，添加商品，点击提交，点击几次提交，就会添加几个商品；
+2.队列问题：待支付订单未支付等15分钟后取消，过往订单中无记录，库存未释放；
+3.待取货商品过期，仍然是待取货的商品，取货会存在问题；
+4.武博会vue-router采用了history 模式，需要后台配置支持。如果后台没有正确的配置，当浏览器直接访问 http://xxx/order 就会返回 404；
+5.全面屏手机，底部button被遮一部分。</div>
+
+</body>
+</html>

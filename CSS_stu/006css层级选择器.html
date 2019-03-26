@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Document</title>
+	<style type="text/css">
+		
+		.box{
+			font-size: 20px;
+			line-height: 40px;
+			/* text-indent: 40px; 首行缩进*/
+		}
+        
+        /* 层级选择器 */
+		.box span{
+			color: red;
+			font-weight: underline; 
+		}
+
+		.box em{
+			font-style: normal;
+			text-decoration: underline;
+			font-weight: bold;
+			color: pink;
+		}
+
+		.box .span02{
+			font-size: 30px;
+			color: rgb(0,10,34);
+		}
+
+	</style>
+</head>
+<body>
+    <h1>层级选择器</h1>
+	<div class="box">
+	   <span>1、</span>功能测试和回归测试发现了整个阶段的80%以上Bug，符合软件Bug出现规律；
+       <br><span>2、</span>按照Bug类别划分，性能问题占整个Bug数量的极小数量，远小于软件业界Bug类别的标准；
+       <br><span>3、</span>目前为止，<span class="span02">所有Bug还有1个一般bug未解决</span>(注：新增商品时，当前会默认存在一张图片，需要手动删除图片后重新上传，且彩丰行的应用查看商品时，未展示出商品的英文名)，<em>解决率达到98%。</em>
+
+	</div>
+    <br>
+    <br>
+    
+	<div class="box2">
+	   <span>1、</span>功能测试和回归测试发现了整个阶段的80%以上Bug，符合软件Bug出现规律；
+       <br><span>2、</span>按照Bug类别划分，性能问题占整个Bug数量的极小数量，远小于软件业界Bug类别的标准；
+       <br><span>3、</span>目前为止，所有Bug还有1个一般bug未解决(注：新增商品时，当前会默认存在一张图片，需要手动删除图片后重新上传，且彩丰行的应用查看商品时，未展示出商品的英文名)，解决率达到98%。
+
+	</div>
+
+</body>
+</html>

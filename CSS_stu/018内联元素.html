@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>内联元素</title>
+	<!-- a span em b strong i 
+    支持部分样式（不支持宽、高、margin上下、padding上下)
+    盒子并在一行
+    代码换行，盒子直接会产生间距
+    子元素是内联元素，父元素可以用text-align 属性设置在水平对齐方式
+	-->
+	<style type="text/css">
+		
+		.box{
+			width: 500px;
+			height: 300px;
+			border:1px solid #000;
+			margin:50px auto 0;
+			font-size: 0; /* 解决内联元素有空格问题*/
+		}
+
+		.box a{
+			background-color: gold;
+			/*width: 300px;
+			height: 200px;  不认识这个属性*/
+			/*margin:100px 20px; /* 上下没有*/
+			/*padding: 0px 20px; /* 上下只是撑开背景*/
+			font-size: 16px; /* 字体大小，对应的内联元素有空格问题*/
+
+		}
+
+		.box2{
+			width: 500px;
+			height: 100px;
+			border:1px solid #000;
+			margin:50px auto 0;
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		<a href="#">链接文字一</a>
+		<a href="#">链接文字二</a>		
+		<a href="#">链接文字三</a>
+	</div>
+
+	<div class="box2">
+		<a href="#">链接文字</a>
+
+	</div>
+
+</body>
+</html>

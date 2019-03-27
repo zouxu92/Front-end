@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>内联块元素，行内块元素</title>
+	<!-- 
+	1、支持全部样式
+    2、如果没有设置宽高，宽高由内容决定
+    3、盒子并在一行
+    4、代码换行，盒子会产生间距
+    5、子元素是内联块元素，父元素可以用text-align 属性设置子元素水平对齐方式。
+
+	 -->
+
+	 <style type="text/css">
+	 	.box{
+			width: 500px;
+			height: 300px;
+			border:1px solid #000;
+			margin:50px auto 0;
+			font-size: 0; /* 解决内联元素有空格问题*/
+		}
+
+		.box a{
+			background-color: gold;
+			width: 100px;
+			height: 50px;
+			/*margin:100px 20px; /* 上下没有*/
+			padding: 0 10px; /* 上下只是撑开背景*/
+			font-size: 16px; /* 字体大小，对应的内联元素有空格问题*/
+            /* dispaly属性时用来设置元素类型及隐藏的，常用属性有：
+               1.none 元素隐藏且不占位置
+               2.block 元素以块元素显示
+               3.inline元素以内联元素显示
+               4.inline-block 元素以内联快元素显示
+            */
+            display: inline-block; /* 转换成内联块*/
+
+		}
+
+	 </style>
+</head>
+<body>
+	<div class="box">
+		<a href="#">链接文字一</a>
+		<a href="#">链接文字二</a>		
+		<a href="#">链接文字三</a>
+		<a href="#">链接文字四</a>
+		<a href="#">链接文字五</a>
+	</div>
+
+</body>
+</html>

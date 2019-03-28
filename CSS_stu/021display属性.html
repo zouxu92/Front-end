@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>display属性</title>
+	<!-- 
+	1.none元素隐藏且不占位置；
+	2.block元素以块元素显示；
+	3.inline元素以内元素显示；
+	4.inline-lock元素以内联块元素显示；
+	 -->
+	 <!-- 
+	 	三种元素，可以通过display属性来互相转化，不过实际开发中，块元素用的
+	 	比较多，所以我们经常把内联元素转化为块元素，少量转化为内联块，
+	 	而要使用内联元素时，直接使用内联元素，而不是块元素转换了。
+	  -->
+	<style type="text/css">
+		body{
+			font-size:0;
+		}
+
+		.box {
+			width: 200px;
+			height: 200px;
+			background-color: gold;
+			display: inline; /* 宽高都不支持*/
+			display: inline-block;
+			font-size: 16px;
+			margin:20px;
+		}
+
+		.con{
+			width: 200px;
+		}
+
+		.con h3{
+			font-size: 30px;
+		}
+
+		.box2{
+			width:200px;
+			height: 200px;
+			background-color: gold;
+			font-size: 16px;
+			display: none;
+		}
+        
+        /* 以块的形式显示出来*/
+	    .con:hover .box2{
+	    	display: block;
+	    }
+
+
+	</style>
+</head>
+<body>
+	<div class="box">div元素</div>
+	<div class="box">div元素</div>
+	<br>
+	<br>
+    <br>
+
+
+	<div class="con">
+		<h3>文字的标题</h3>
+		<div class="box2">文字标题的说明</div>
+	</div>
+
+</body>
+</html>

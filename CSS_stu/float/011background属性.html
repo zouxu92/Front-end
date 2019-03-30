@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>background属性</title>
+	<style type="text/css">
+		
+		.box{
+			width: 500px;
+			height: 400px;
+			border: 5px solid #000;
+			margin:50px auto 0;
+
+			background-image: url(../../images/head001.png);
+			/*
+				repeat-x:只平铺x轴;
+				repeat-y：只平铺y轴；
+				no-repeat：只平铺一次；
+				repeat：省缺值,平铺所有
+			*/
+			background-repeat: repeat;
+
+			/* 
+			    水平方向： left center right
+			    垂直方向：  top center botton
+
+			*/
+			background-position: top center bottom; /* 还可以用数值 -10px 20px  */
+
+			/* 上面可以用一句话写完*/
+			background: url(../../images/head001.png) -20px 10px no-repeat cyan;
+
+
+		}
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		html图片
+	</div>
+
+</body>
+</html>

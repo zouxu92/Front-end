@@ -1,0 +1,332 @@
+ /*  页面顶部的样式 */
+
+body{
+	font-family: "Microsoft Yahei";
+	font-size: 14px;
+}  /* 设置全局字体以及大小*/
+
+.header_con{
+	height: 29px;
+	background: #f7f7f7;
+	border: 1px solid #ddd;
+}
+
+.header{
+	width: 1200px;
+	height: 29px;
+	margin:0 auto; /* 水平居中*/
+}
+
+.welcome{
+	font-size: 12px;
+	color: #666;
+	line-height: 29px;
+}
+
+.user_con{
+	/*background: pink;*/
+}
+
+.user_info{
+	display: none; /* 隐藏登录信息 */
+	font-size: 12px;
+	line-height: 29px;
+	color: #666;
+}
+
+.user_info em{
+	color: #f80;
+}
+
+.login_btns li, .user_btns li{
+	float: left;
+	height: 29px;
+}
+
+.login_btns li a,.login_btns span,.user_btns a,.user_btns span{
+	display: block;
+	line-height: 29px; /* 居中处理*/
+	font-size: 12px;
+	color: #666;
+}
+
+.login_btns span,.user_btns span{
+	color: #cecece;
+	margin: 0 10px;
+}
+
+.login_btns a:hover,.user_btns a:hover{
+	color: #f80;
+}
+
+
+/* logo、 搜索框、 购物车 样式*/
+.center_con{
+	width: 1200px;
+	height: 115px;
+	margin:0 auto;
+}
+
+.logo{
+	margin: 29px 0 0 17px;
+}
+
+.search_con{
+	width: 616px;
+	height: 38px;
+	margin:34px 0 0 124px;
+	border:1px solid #37ab40; /* 搜索框,设置边框后，需要减去宽和高*/
+	background: url(../images/icons.png) 10px -337px no-repeat; /* 距离左边、上面 no-repeat 不重复*/
+}
+
+.search_con .input_txt{
+	margin-left: 36px;
+	width: 480px;
+	height: 38px;
+	border: 0px;
+
+	outline: none; /* 去掉搜索栏获得焦点时，显示的蓝色框*/
+}
+
+.search_con .input_sub{
+	width: 100px;
+	height: 38px;
+	background-color: #37ab40;
+	border: 0px;
+	font-size: 14px;
+	color: #fff;
+
+	/* 将鼠标的形状设置为手型*/
+	cursor: pointer;
+}
+
+.chart_con{
+	width: 200px;s
+	height: 40px;
+	margin-top: 34px;
+}
+
+.chart_link{
+	width: 158px;
+	height: 38px;
+	border: 1px solid #ddd;
+	background: url(../images/icons.png) 10px -300px no-repeat #f7f7f7;
+	text-indent: 56px;
+	line-height: 38px;
+	font-size: 14px;
+	color: #37ab40;
+}
+
+.chart_num{
+	height: 40px;
+	width: 40px;
+	background-color: #f80;
+	text-align: center;
+	line-height: 40px;
+	font:bold 18px/40px 'Mircosoft Yahei';
+	color: #fff;
+}
+
+
+/*  主菜单 */
+.main_menu_con{
+	height: 40px;
+	border-bottom: 2px solid #39a93e;
+}
+
+.center_con02{
+	width: 1200px;
+	height: 40px;
+	/*background: gold;*/
+	margin:0 auto;
+}
+
+.center_con02 h2{
+	float:left;
+	width: 200px;
+	height: 40px;
+	background-color: #39a93a; 
+	text-align: center;
+	font:normal 14px/40px 'Microsoft Yahei';
+	color: #fff;
+}
+
+.center_con02 li{
+	height: 40px;
+	float: left;
+}
+
+.center_con02 ul{
+	float: left;
+	overflow: hidden;
+	list-style: none;
+	padding-left: 0px; 
+}
+
+.center_con02 li a{
+	display: block;
+	height: 14px;
+	line-height: 14px;
+	padding: 0 20px;
+	margin-top: 13px;
+	margin-left: -1px;
+	border-left: 1px solid #666;
+	color: #666;
+	text-decoration: none;
+}
+
+.center_con02 li a:hover{
+	color: #f80;
+}
+
+
+/* 二级菜单、幻灯片、广告 */
+
+.center_con03{
+	width: 1200px;
+	height: 270px;
+	margin: 0 auto;
+}
+
+.sub_menu_con{
+	width: 200px;
+	height: 270px;
+}
+
+.sub_menu_con li{
+	width: 198px;
+	height: 44px;
+	border: 1px solid #eee;
+	border-top: 0px;
+	background: url(../images/icons.png) 175px -258px no-repeat;
+
+}
+
+.sub_menu_con li a {
+	display: block;
+	height: 44px;
+	line-height: 44px;
+	text-indent: 71px; /* 首行缩进*/
+	color: #333;
+	background: url(../images/icons.png) 25px 0 no-repeat;
+}
+
+.sub_menu_con li .icon02{
+	background-position: 25px -45px;
+}
+
+.sub_menu_con li .icon03{
+	background-position: 25px -90px;
+}
+
+.sub_menu_con li .icon04{
+	background-position: 25px -135px;
+}
+
+.sub_menu_con li .icon05{
+	background-position: 25px -175px;
+}
+
+.sub_menu_con li .icon06{
+	background-position: 25px -220px;
+}
+
+.sub_menu_con li a:hover{
+	color: #f80;
+}
+
+.slide_con{
+	width:760px;
+	height:270px;
+	background: pink;
+	position: relative; /* 定位*/
+	overflow: hidden;
+}
+
+.slide_con .slide{
+	position: absolute;
+	width: 4560px;
+	height: 270px;
+	left: 0;
+	top: 0;
+}
+
+.slide_con .slide li{
+	float: left;
+}
+
+.prev,.next{
+	position: absolute; /* 相对父级进行定位*/
+	width: 15px;
+	height: 24px;
+	background: url(../images/icons.png) left -387px no-repeat;
+	left: 0;
+	top: 0;
+}
+
+.prev{
+	left: 11px;
+	top: 122px;
+}
+
+.next{
+	background-position:left -427px;
+	left: 732px;
+	top: 122px;
+}
+
+.points{
+	position: absolute;
+	width: 100%;
+	/*background-color: green;*/
+	height: 11px;
+	left: 0;
+	bottom: 9px;
+	font-size: 0;
+	text-align: center;
+}
+
+.points li{
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	background-color: #9f9f9f;
+	margin: 0 5px;
+	border-radius: 50%; /* 圆角显示 */
+	cursor:pointer;  /* 圆点移动鼠标过去变成一个手*/
+
+}
+
+.points .active{
+	background-color: #cecece;
+}
+
+.advs{
+	width: 240px;
+	height: 270px;
+	/*background: lightgreen;*/
+}
+
+.advs img{
+	display: block;  /* 解决图片在有些浏览器上有3px的间隔*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

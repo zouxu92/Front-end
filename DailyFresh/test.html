@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>行内元素显示在同一行</title>
+	<style type="text/css">
+		/* 顶部样式 */
+		.header{
+			background-color:#f7f7f7;
+			height:29px;
+			border-bottom:1px solid #dddddd
+		}
+
+		.welcome,.user_con{
+			display: inline-block;
+		}
+
+		.welicome {
+			float: left;
+		}
+
+		.user_con{
+			float: right;
+			height: 29px;
+			/*background: green;*/
+			font-size: 0;
+		}
+
+		.login_btn,.user_link{
+			display: inline-block;
+			padding: 0;
+		}
+
+		.login_btn li,.user_link li{
+			list-style: none; /* 去掉小圆点*/
+			display: inline-block;
+			text-indent: center;
+			line-height: 29px;
+			font-size: 18px;
+			/*background: pink;*/
+		}
+
+		.login_btn li a,.user_link li a{
+			text-decoration: none; /* 去掉下滑线*/
+			color: #f80;
+		}
+
+
+		.box001,.box002{
+			display: inline-block;
+			background: grey;
+			font-size: 16px;
+		}
+		.con, .box1{
+			display: inline-block;
+			background: red;
+			font-size: 16px;
+		}
+
+
+
+
+
+	</style>
+</head>
+<body>
+
+	<div class="header_con">
+		<div class="header">
+			<div class="welcome fl">欢迎来到天天生鲜!</div>
+			<div class="user_con fr">
+				<ul class="login_btn fl">
+					<li><a href="#">登录</a></li>
+					<li><span>|</span></li>
+					<li><a href="#">注册</a></li>
+				</ul>
+				 <ul class="user_link fl">
+				 	<li><span>|</span></li>
+				 	<li><a href="">我的购物车</a></li>
+				 	<li><span>|</span></li>
+				 	<li><a href="#">我的订单</a></li>
+				 </ul>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="con">2222
+		<div class="box1">1111
+			<div class="box001">aaaa</div>
+			<div class="box002">dddd</div>
+		</div>
+	</div>
+
+<!-- 		<div class="header_con">
+		<div class="header">
+			<div class="welcome fl">欢迎来到天天生鲜!</div>
+			<div class="fr">
+				<div class="login_info fl">
+					欢迎您：<em>张 山</em>
+				</div>
+				<div class="login_btn fl">
+					<a href="login.html">登录</a>
+					<span>|</span>
+					<a href="register.html">注册</a>
+				</div>
+				<div class="user_link fl">
+					<span>|</span>
+					<a href="user_center_info.html">用户中心</a>
+					<span>|</span>
+					<a href="cart.html">我的购物车</a>
+					<span>|</span>
+					<a href="user_center_order.html">我的订单</a>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+	<div class="search_bar clearfix">
+		<a href="index.html" class="logo fl"><img src="images/logo.png"></a>
+		<div class="search_con fl">
+			<input type="text" class="input_text fl" name="" placeholder="搜索商品">
+			<input type="button" class="input_btn fr" name="" value="搜索">
+		</div>
+		<div class="guest_cart fr">
+			<a href="#" class="cart_name fl">我的购物车</a>
+			<div class="goods_count fl" id="show_count">1</div>
+		</div>
+	</div>
+ -->
+
+	
+</body>
+</html>

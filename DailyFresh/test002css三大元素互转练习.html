@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css三大元素互转练习</title>
+	<style type="text/css">
+		
+		/* 清楚浮动 */ 
+		/*.clearfix:after,.clearfix:before{
+			content: "";
+			display: table;
+		}
+		.clearfix:after{
+			clear:both;
+		}
+		.clearfix{
+			zoom:1;
+		}*/
+
+		
+		.xxx {
+			height: 50px;
+			border: 1px solid #000;
+			/*margin: 50px auto 0;*/
+			background: gold;
+		}
+
+		.divtest{
+			float: left;
+			/*background: pink;*/
+			height: 50px;
+		}
+
+		.divtest h3{
+			/*background: green;*/
+			margin: 0 20px;
+			line-height: 50px;
+			font-size: 16px;
+		}
+
+		.lutest{
+			font-size: 0;
+		}
+
+		.lutest li{
+			display: inline-block;
+
+		}
+
+		.lutest li a{
+			display: inline-block;
+			height: 50px;
+			background: green;
+			text-decoration: none; /* 取消下滑线*/
+			font-size: 50px;
+			text-align: center;
+			line-height: 50px;  /* 内容撑开，设置与高度一致48px*/
+			border-left: 1px solid #fff;
+			margin-left: 50px;			
+		}	
+
+		.lutest li a:hover{
+			color: gold;
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<div class="xxx">
+		<div class="divtest">
+			<h3>这是一个h3标题</h3>
+		</div> 
+		<ul class="lutest">
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+		</ul>
+	</div>
+
+</body>
+</html>

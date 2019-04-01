@@ -1,0 +1,217 @@
+
+/* 头部标签 */
+.header_con{
+	height: 29px;
+	background-color: #f7f7f7;
+	border-bottom: 1px solid #ddd;
+}
+
+.header{
+	height: 29px;
+	background-color: #f7f7f7;
+}
+
+.welcome{
+	float: left;
+	color: #666;
+}
+
+
+.user_con ul{
+	height: 29px;
+	display: inline-block;
+	padding: 0;
+	/*float: right;*/
+}
+
+.login_btn,.user_link{
+	list-style: none; /* 去掉小圆点*/
+	margin: 0;
+}
+
+.login_btn li,.user_link li{
+	display: inline-block;
+}
+
+
+/* 登录后的情况*/
+.user_info{
+	display: none; /* 隐藏登录的名称*/
+}
+
+.login_btn a,.user_link a{
+	color:#666;
+	text-decoration: none; /* 去掉下划线*/
+	margin-left: 10px;
+}
+
+.login_btn a:hover,.user_link a:hover{
+	color:#ff8800;
+}
+
+.login_btn span,.user_link span{
+	color:#cecece;
+}
+
+
+/* logo 搜索 购物车*/
+
+.center_con{
+	height: 100px;
+	/*background: pink;*/
+	text-align: center;
+}
+
+.logo{
+	display: block;
+	padding-top: 20px;
+	padding-left: 50px;
+	float: left;
+}
+
+.search_con{
+	height: 40px;
+	border: 1px solid #39a93e;
+	margin-top: 30px;
+
+}
+
+.input_text{
+	width: 420px;
+	height: 40px;
+	padding: 0;
+	border: 0;
+	margin-left: 30px;	
+}
+
+.input_sub{
+	height: 40px;
+	width: 89px;
+	background: #39a93e;
+	color: #fff;
+	padding: 0;
+	border: 0;
+}
+
+.search_con,.chart_con{
+	display: inline-block;
+}
+
+
+.chart_con,.chart_num{
+	display: inline-block;
+}
+
+.chart_con{
+	float: right;
+	margin-top: 30px;
+	margin-right: 30px;
+	border: 1px solid grey;
+	/*padding-left: 78px;*/
+}
+
+.chart_link{
+	padding-left: 45px;
+	color: green;
+	text-decoration: none; /* 去掉下划线*/
+	font-size: 14px;
+	font-family: 'Microsoft Yahei';
+	font-style: normal;  /* 去掉粗体*/
+}
+
+
+
+.chart_num{
+	width: 40px;
+	height: 40px;
+	background-color: #f80;
+	text-align: center;
+	font:18px/40px 'Microsoft Yahei';
+	color: #fff;
+}
+
+
+
+
+
+/*  分类导航栏 */
+.main_menu_con{
+	height: 40px;
+	border-bottom: 2px solid #39a93e;
+}
+
+.center_con02{
+	width: 1200px;
+	height: 40px;
+	/*background: gold;*/
+	margin:0 auto;
+}
+
+.center_con02 h2{
+	float:left;
+	width: 200px;
+	height: 40px;
+	background-color: #39a93a; 
+	text-align: center;
+	font:normal 14px/40px 'Microsoft Yahei';
+	color: #fff;
+	margin-left: 30px;
+	margin-top: 0px;
+}
+
+.center_con02 li{
+	height: 40px;
+	float: left;
+}
+
+.center_con02 ul{
+	float: left;
+	overflow: hidden;
+	list-style: none;
+	padding-left: 0px; 
+}
+
+.center_con02 li a{
+	display: block;
+	height: 14px;
+	line-height: 14px;
+	padding: 0 20px;
+	/*margin-top: 13px;*/
+	margin-left: -1px;
+	border-left: 1px solid #666;
+	color: #666;
+	text-decoration: none;
+}
+
+.center_con02 li a:hover{
+	color: #f80;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

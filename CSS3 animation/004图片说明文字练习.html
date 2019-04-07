@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图片说明文字练习</title>
+	<style type="text/css">
+		.pic_con{
+			width: 200px;
+			height: 300px;
+			margin:50px auto 0;
+			position: relative; /* 相对定位 */
+			overflow: hidden; /* 隐藏多余的*/
+		}
+
+		.pic_info{
+			position: absolute;
+			left: 0;
+			top: 300px; /* 字体放到图片底下*/
+			width: 180px;
+			height: 100px;
+			background-color:rgba(0,0,0,0.3);
+			color: #fff;
+			padding: 10px;
+
+			transition: all 500ms ease;
+
+		}
+
+		.pic_con:hover .pic_info{
+			top:180px;
+		}
+		
+	
+
+	</style>
+</head>
+<body>
+	<div class="pic_con">
+		<img src="../DailyFresh/images/banner01.jpg" alt="banner">
+		<div class="pic_info">
+			<h3>文字说明标题</h3>
+			<p>文字说明文字说明文字说明文字说明文字说明文字</p>
+		</div>
+	</div>
+	
+</body>
+</html>

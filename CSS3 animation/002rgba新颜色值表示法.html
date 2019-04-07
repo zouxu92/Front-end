@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>透明</title>
+	<style type="text/css">
+		
+		body{
+			background: url(../DailyFresh/images/banner01.jpg);
+		}
+
+		.box{
+			width: 300px;
+			height: 100px;
+			background: #000;
+			color: #fff;
+			font-size: 20px;
+			text-align: center;
+			line-height: 100px;
+
+			/* 设置透明度写法*/
+			opacity: 0.3;
+			filter: alpha(opacity=30);
+		}
+
+		.box2{
+			width: 300px;
+			height: 100px;
+			background-color: rgba(0,0,0,0.3); /* rgba 设置透明度的方法*/
+			color: #fff;
+			font-size: 20px;
+			text-align: center;
+			line-height: 100px;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="box">这是一个div</div>
+	<div class="box2">这是第二个div</div>
+</body>
+</html>

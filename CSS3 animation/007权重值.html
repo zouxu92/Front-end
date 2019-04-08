@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>007权重值</title>
+	<style type="text/css">
+
+		.box{
+			color: red!important;
+		}
+		/* 按照等级来计算权重
+		1.!important，加载样式属性后，权重值为10000
+		2.内联样式，如：style-""， 权重值为1000
+		3.id选择器，如#content，权重值为100
+		4.类，伪类和属性选择器，如：content、：hover 权重值为10
+		5.标签选择器和伪类元素选择器，如：div、p、：before权重值为1
+		6.同样选择器(*)/子选择器(>)、相邻选择器(+)、同胞选择器(~) 权重值为0
+		*/
+
+
+	</style>
+
+</head>
+<body>
+	<div class="box" style="color: blue">这是一个div</div>
+	<p>1.!important，加载样式属性后，权重值为10000</p>
+	<p>2.内联样式，如：style-""， 权重值为1000</p>
+	<p>3.id选择器，如#content，权重值为100</p>
+	<p>4.类，伪类和属性选择器，如：content、：hover 权重值为10</p>
+	<p>5.标签选择器和伪类元素选择器，如：div、p、：before权重值为1 </p>
+	<p>6.同样选择器(*)/子选择器(>)、相邻选择器(+)、同胞选择器(~) 权重值为0</p>
+
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>004流体布局</title>
+	<style type="text/css">
+		body{
+			margin:0;
+		}
+
+		.con a {
+			display: block; /* 转换成块，支持宽高*/
+			width: calc(25% - 4px); /* 用calc 来解决移动端 显示不下的情况*/
+			height: 100px;
+			background-color: gold;
+			text-align: center;
+			line-height: 100px;
+			float: left;
+			text-decoration: none;
+			color: #333;
+			font-size: 12px;
+
+			border: 2px solid #000; /* 加边框会显示不下*/
+
+			/*  box-sizing: border-box; /* 这种解决方法，可以不改变上面设置的宽度，边框加padding+ border 就等于盒子的宽高*/	
+		}
+
+	</style>
+
+
+</head>
+<body>
+	<div class="con">
+		<a href="#">菜单文字</a>
+		<a href="#">菜单文字</a>
+		<a href="#">菜单文字</a>
+		<a href="#">菜单文字</a>
+	</div>
+	
+</body>
+</html>

@@ -1,14 +1,25 @@
+/* 最外面包裹一层，同时解决底部bottom在微信等一些地方无法点击问题 */
+.main_wrap{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+}
+
+
+/* 顶部样式*/
 .header{
-	height: 50px;
+	height: 2.5rem;
 	background-color: #37ab40;
 	position: relative; /* 设置相对定位参考点*/
 }
 
 .logo{
 	display: block;
-	width: 89px;
-	height: 36px;
-	margin: 7px auto 0;
+	width: 4.5rem;
+	height: 1.8rem;
+	margin: 0.35rem auto 0;
 }
 
 .logo img{
@@ -16,11 +27,74 @@
 }
 
 .search{
-	width: 27px;
-	height: 27px;
+	width: 1.375rem;
+	height: 1.375rem;
 	position: absolute;
-	right: 15px;
-	top: 12px;      /* 设置相对定位的左边和上边距离*/
+	right: 0.75rem;
+	top: 0.6rem;      /* 设置相对定位的左边和上边距离*/
 	background: url(../images/icons.png) left top no-repeat;
-	background-size: 60px 640px; /* 二倍图，直接缩小一半*/
+	background-size: 3.0rem 42.0rem; /* 二倍图，直接缩小一半*/
 }
+
+/* 中间部分内容 */
+.center_con{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 2.5rem;
+	bottom: 2.5rem;
+	background-color: #efefef;
+	/* 强制只有纵向滚动条*/
+	overflow-y: auto;
+	overflow-x: hidden; 
+}
+
+.slide{
+	height: 7.0rem;
+}
+
+.slide img{
+	width: 100%;
+}
+
+.menu_con{
+	height: 9.25rem;
+	background-color: #fff;
+	margin-top: 0.5rem;
+	overflow: hidden; /* 强切*/
+}
+
+.menu_con ul{
+	width: 18rem;
+	height: 8.375rem;
+	margin: 0.875rem 0 0 1.375rem;
+	background-color: gold;
+}
+
+.menu_con li{
+	width: 2.75rem;
+	height: 4.05rem;
+	float: left;
+	background-color: pink;
+	margin-right: 1.675rem;
+}
+
+.menu_con li a{
+	display: block;
+	height: 2.75rem;
+	background: url(../images/icons.png) left -3.025rem no-repeat;
+	background-size: 3.0rem 42.0rem; /* 二倍图，直接缩小一半*/
+}
+
+.footer{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2.5rem;
+	background-color: #fff;
+
+}
+
+
+

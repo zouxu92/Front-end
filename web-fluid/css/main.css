@@ -1,3 +1,7 @@
+body{
+	font-family:'Microsoft Yahei';
+}
+
 /* 最外面包裹一层，同时解决底部bottom在微信等一些地方无法点击问题 */
 .main_wrap{
 	position: absolute;
@@ -6,7 +10,6 @@
 	top: 0px;
 	bottom: 0px;
 }
-
 
 /* 顶部样式*/
 .header{
@@ -27,13 +30,13 @@
 }
 
 .search{
-	width: 1.375rem;
-	height: 1.375rem;
 	position: absolute;
+	width: 1.35rem;
+	height: 1.35rem;
 	right: 0.75rem;
 	top: 0.6rem;      /* 设置相对定位的左边和上边距离*/
 	background: url(../images/icons.png) left top no-repeat;
-	background-size: 3.0rem 42.0rem; /* 二倍图，直接缩小一半*/
+	background-size: 3rem 42rem; /* 二倍图，直接缩小一半*/
 }
 
 /* 中间部分内容 */
@@ -47,11 +50,13 @@
 	/* 强制只有纵向滚动条*/
 	overflow-y: auto;
 	overflow-x: hidden; 
+
+	padding-bottom: 0.5rem;
 }
 
-.slide{
-	height: 7.0rem;
-}
+/*.slide{
+	height:7.0rem;
+}*/
 
 .slide img{
 	width: 100%;
@@ -60,30 +65,163 @@
 .menu_con{
 	height: 9.25rem;
 	background-color: #fff;
-	margin-top: 0.5rem;
+	margin-top:0.5rem;
 	overflow: hidden; /* 强切*/
 }
 
 .menu_con ul{
-	width: 18rem;
-	height: 8.375rem;
-	margin: 0.875rem 0 0 1.375rem;
-	background-color: gold;
+	width: 19rem;
+	height: 8.1rem;
+	margin: 0.7rem auto 1.37rem;
 }
 
 .menu_con li{
 	width: 2.75rem;
 	height: 4.05rem;
 	float: left;
-	background-color: pink;
-	margin-right: 1.675rem;
+	margin-right: 1.625rem;
 }
 
 .menu_con li a{
 	display: block;
-	height: 2.75rem;
-	background: url(../images/icons.png) left -3.025rem no-repeat;
-	background-size: 3.0rem 42.0rem; /* 二倍图，直接缩小一半*/
+	height: 2.8rem;
+	width: 2.8rem;
+	background: url(../images/icons.png) left -3rem no-repeat;
+	background-size: 3rem 42rem; /* 二倍图，直接缩小一半*/
+}
+
+.menu_con li:nth-child(2) a{
+	background-position:left -6rem;
+}
+.menu_con li:nth-child(3) a{
+	background-position:left -9rem;
+}
+.menu_con li:nth-child(4) a{
+	background-position:left -12rem;
+}
+.menu_con li:nth-child(5) a{
+	background-position:left -15rem;
+}
+.menu_con li:nth-child(6) a{
+	background-position:left -18rem;
+}
+.menu_con li:nth-child(7) a{
+	background-position:left -21rem;
+}
+.menu_con li:nth-child(8) a{
+	background-position:left -24rem;
+}
+
+.menu_con li h2{
+	height: 1.3rem;
+	font: 13px/1.3rem 'Microsoft Yahei';
+	color:#666;
+	text-align:center;
+}
+
+/*  二级banner */
+
+.common_model{
+	/*height: 17.25rem;*/
+	background-color: #fff;
+	margin-top: 0.5rem;
+}
+
+.common_title{
+	width: 17.75rem;
+	height: 0.9rem;
+	/*background-color: gold;*/
+	margin: 0.8rem auto 0;
+}
+
+.common_title h3{
+	font: bold 15px/0.9rem 'Microsoft Yahei';
+	color: #fbc83b;
+	border-left: 0.25rem solid #fbc83b;
+	text-indent: 0.4rem; /* 首行缩进*/
+}
+
+.common_title a{
+	font: normal 12px/0.9rem 'Microsoft Yahei';
+	color: #7f7f7f;
+}
+
+.banner{
+	width:17.75rem;
+	height:4.5rem;
+	margin:0.5rem auto 0;
+}
+
+.banner img{
+	width: 100%;
+}
+
+.goods_list{
+	width: 17.75rem;
+	height: 9.35rem;
+	margin: 0.5rem auto 0.7rem;
+}
+
+.goods_list li{
+	float: left;
+	width: 5.8rem;
+	height: 9.35rem;
+	border-right: 1px solid #e7e7e7;
+	position: relative;
+	box-sizing: border-box;	
+} 
+
+.goods_list li:last_child{
+	border-right: 0px;	
+}
+
+.goods_link{
+	display:block;
+	width: 4.5rem;
+	height: 4.5rem;
+	margin: 0.375rem auto 0;
+}
+
+.goods_link img{
+	width: 100%;
+}
+
+.goods_list h4{
+	font: normal 15px/15px 'Microsoft Yahei';
+	width: 5.0rem;
+	margin: 0.925rem auto 0;
+
+	overflow: hidden;
+	/* 强制文字不换行*/
+	white-space: nowrap;
+	/* 文字超出部分省略号*/
+	text-overflow: ellipsis;
+}
+
+.unit{
+	width: 5.0rem;
+	font: normal 12px/12px 'Microsoft Yahei';
+	color: #bbb;
+	margin: 0.8rem auto 0;
+}
+
+.price{
+	width: 5.0rem;
+	font: normal 12px/12px 'Microsoft Yahei';
+	color: #ff4400;
+	margin: 0.5rem auto 0;
+}
+
+.add_chart{
+	position: absolute;
+	width: 1.7rem;
+	height: 1.7rem;
+	background-color: gold;
+
+	right: 0.675rem;
+	bottom: 0;
+	background: url(../images/icons.png) left -27.0rem no-repeat;
+	background-size: 3rem 42rem; /* 二倍图，直接缩小一半*/
 }
 
 .footer{
@@ -96,5 +234,40 @@
 
 }
 
+.footer ul{
+	height: 2.5rem;
+}
 
+.footer li{
+	width: 25%;
+	height: 2.5rem;
+	float: left;
+}
 
+.footer li a{
+	display: block;
+	width: 1.375rem;
+	height: 1.3rem;
+	margin: 0.25rem auto 0;
+	background: url(../images/icons.png) left -30rem no-repeat;
+	background-size: 3.0rem 42rem;
+}
+
+.footer li:nth-child(2) a{
+	background-position: left -33rem;
+}
+
+.footer li:nth-child(3) a{
+	background-position: left -36rem;
+}
+
+.footer li:nth-child(4) a{
+	background-position: left -39rem;
+}
+
+.footer li h2{
+	font: normal 12px/12px 'Microsoft Yahei';
+	color: #949392;
+	text-align: center;
+	margin-top: 0.2rem; 
+}

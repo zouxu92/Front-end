@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>003循环酱数据放入到页面中</title>
+	<script type="text/javascript">
+		
+		window.onload = function(){
+			var sContent = document.getElementById('list');
+			var aList = ['111', '222', '333', '444'];
+			var iLen = aList.length;
+			var sTr ='';
+
+			for(var i=0; i<iLen; i++){
+				sTr += '<li>' + aList[i] + '</li>';
+			}
+
+			sContent.innerHTML = sTr;
+
+		}
+	</script>
+
+	<style type="text/css">
+		.list{
+			list-style: none;
+			margin: 50px auto 0;
+			padding: 0;
+			width: 300px;
+			height: 305px;
+		}
+
+		.list li{
+			height: 60px;
+			border-bottom: 1px dotted #000;
+			line-height: 60px;
+			font-size: 16px;
+		}
+
+	</style>
+
+</head>
+<body>
+	<ul class="list" id="list">
+<!-- 		<li>111</li>
+		<li>111</li>
+		<li>111</li>
+		<li>111</li>
+		<li>111</li> -->
+	</ul>
+</body>
+</html>

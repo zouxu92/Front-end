@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>002按钮切换元素显示</title>
+	<script type="text/javascript">
+		window.onload = function(){
+
+			var oBtn = document.getElementById('btn01');
+			var oDiv = document.getElementById('box01');
+
+			//alert(oDiv.style.display)   一开始这个值是空的 是读取的标签里写的display 属性
+
+			oBtn.onclick = function(){
+				/* 用或，等于空进行更改这个bug*/
+				if(oDiv.style.display == 'block' || oDiv.style.display==''){
+					oDiv.style.display = 'none';
+				}
+				else {
+					oDiv.style.display = 'block';
+				}
+				
+			}
+
+		}
+	</script>
+
+	<style type="text/css">
+		
+		.box{
+			width: 200px;
+			height: 400px;
+			background-color: gold;
+		}
+	</style>
+</head>
+<body>
+	<input type="button" name="" value="切换" id="btn01">
+	<div class="box" id="box01"></div>
+</body>
+</html>

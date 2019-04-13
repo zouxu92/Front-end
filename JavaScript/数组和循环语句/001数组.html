@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>001数组</title>
+	<script type="text/javascript">
+		
+		// 通过实例化来创建数组
+		var aList01 = new Array(1,2,3);
+
+		// 通过直接变量的方式创建数组
+		var aList02 = [1,2,3];
+
+		// 通过length 获取成员的个数
+		alert(aList02.length);
+
+		// 通过[]来获取某个成员，从0开始；
+		//alert(aList02[0]);
+
+		// 通过push往数据里面添加成员 
+		// push() 和 pop() 从数组最后增加成员或删除成员
+		aList02.push('b');
+
+		//alert(aList02);
+		// unshift()和 shift() 从数组前面增加成员或删除成员
+
+		//reverse() 将数组反转
+
+		//indexOf() 返回数组中元素第一次出现的索引值
+
+		//splice() 在数组中增加或删除成员
+
+		var aList = [1,2,3,4];
+		aList.splice(2,1,7,8,9); //从第2个元素开始，删除1个元素，然后在此位置增加'7,8,9'三个元素
+		alert(aList); //弹出 1,2,7,8,9,4
+
+		// join() 将数组成员通过一个分隔符合并成字符串
+		var aList003 = [1,2,3,4];
+		alert(aList003.join('-')); // 弹出 1-2-3-4
+
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

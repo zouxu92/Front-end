@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>003时钟</title>
+    <script type="text/javascript">
+        window.onload = function(){
+            var oDiv = document.getElementById('div1');
+
+            var sNow = new Date();
+            // 获取年
+            var iYear = sNow.getFullYear();
+            // 获取月，月份从0~11
+            var iMonth = sNow.getMonth() + 1;
+            //
+            var iDate = sNow.getDate();
+            //
+            var iWeek = sNow.getDay();
+
+            var iHour = sNow.getHours();
+
+            var iMinute = sNow.getMinutes();
+
+            var iSecond = sNow.getSeconds();
+
+            var sTr = '当前时间是：'+ iYear + "年" + iMonth +'月' + iDate + '日' + ' 星期' + iWeek + ' ' + iHour + ':' + iMinute + ':'+ iSecond;
+            oDiv.innerHTML = sTr;
+
+        }
+
+    </script>
+
+    <style type="text/css">
+        div{
+            text-align: center;
+            font-size: 25px;
+            color: blue;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="div1"></div>
+</body>
+</html>

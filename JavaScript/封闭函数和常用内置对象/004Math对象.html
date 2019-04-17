@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>004Math对象</title>
+	<script type="text/javascript">
+		
+		var iPi = Math.PI;
+
+		// Math.random 只返回 0~1 的随即数
+		var iNum = Math.random();
+
+		// alert(iNum);
+		// 用浏览器的console 进行调试程序
+		//console.log(arr);
+		//math.floor 向下取整,保留整数
+		alert(Math.floor(5.9));
+
+		//math.ceil 向上取整,保留整数
+		alert(Math.ceil(5.001));  
+
+		// 10 -20 之间的随即数
+		var iN01 = 10;
+		var iN02 = 20;
+		var arr2 = [];
+		for(var i = 0; i<30; i++){
+			// 生成10~20 的随即数
+			var iNum02 = Math.floor((iN02-iN01+1)*Math.random()) + iN01;
+
+			arr2.push(iNum02);
+		}
+
+		console.log(arr2);
+		
+
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

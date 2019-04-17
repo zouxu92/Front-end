@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>004变量作用域</title>
+
+	<script type="text/javascript">
+		
+		// 函数外部定义的全局变量，函数内外部都可以访问；
+		var iNum01 =12;
+
+		function myalert(){
+
+			iNum01 += 10;
+
+			//函数内部定义的局部变量，只有内部可以访问
+			var iNum02 = 36;
+
+			alert(iNum01);
+		}
+
+		function myalert02(){
+			alert(iNum01);
+		}
+
+
+		myalert();
+		myalert02();
+		//  这个直接报错，函数内部定义的内容
+		//alert(iNum02);
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

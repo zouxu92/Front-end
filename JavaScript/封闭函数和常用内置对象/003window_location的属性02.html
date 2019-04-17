@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>003window_location的属性</title>
+	<script type="text/javascript">
+		window.onload= function(){
+
+
+			var oBody = document.getElementById('body01');
+			// window.location.search //获取地址参数部分
+			var sDate = window.location.search;
+
+			if(sDate!=''){
+				var aRr = sDate.split("=");
+				var iNum = aRr[1];
+
+				if(iNum==1){
+					oBody.style.backgroundColor = 'gold';
+				}
+				else if(iNum==2){
+					oBody.style.backgroundColor = 'pink';
+				}
+				else{
+					oBody.style.backgroundColor = 'green';
+				}
+			}
+
+		}
+
+	</script>
+
+</head>
+<body id="body01">
+
+	
+</body>
+</html>

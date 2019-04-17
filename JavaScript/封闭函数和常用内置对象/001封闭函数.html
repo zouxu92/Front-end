@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>001封闭函数</title>
+	<script type="text/javascript">
+		
+		/*
+		function myalert(){
+			alert('hello world!');
+		}
+
+		myalert();
+		将这个函数转换成封闭函数
+		*/
+
+		(function (){
+			//alert('hello world!');
+		})();
+
+		// 封闭函数还可以这样写 ~ 或者 ！ 号都可以
+		~function(){
+			alert('hello');
+		}();
+
+		!function(){
+			alert('hello');
+		}();
+
+
+
+		var iNum01 = 12;
+
+		function myalert02(){
+			alert("hello world!");
+		}
+
+
+		// 在封闭函数前面加一个"；"号，可以避免js压缩时候出错。
+		// 封闭函数，里面的属性不会影响全局变量
+		(function(){
+			var iNum01 = 24;
+			function myalert02(){
+				alert('hello hello!')
+			}
+			alert(iNum01);
+			myalert02();
+		})();
+
+		alert(iNum01);
+		myalert02();
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

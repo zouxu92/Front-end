@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>005倒计时</title>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oDiv = document.getElementById('div1');
+
+			function fnTimeleft(){
+				// 实际开发中需要读取后台的时间，可以通过ajax来读取
+				var sNow = new Date();
+
+				// 未来时间 ：4月30日晚24点
+				var sFuture = new Date(2019,3,30,24,0,0);
+
+				//计算还有多少秒 alert(sFuter - sNow);
+				var sLeft = parseInt(( sFuture - sNow)/1000);
+
+				// 计算还有多少天，去掉小数点
+				var idays = parseInt(sLeft/86400);
+
+				// 计算还有多少小时，去掉小数点
+				var iHours = parseInt((sLeft%86400)/3600);
+				
+				// 计算还有多少分，去掉小数点；
+				var iMinutes = parseInt(((sLeft%86400)%3600)/60);
+
+				// 计算还有多少秒
+				var iSeconds = sLeft%60;
+
+				var sTr = '距离5月1日还剩: '+ idays + '天' + iHours + '时' + fnTodou(iMinutes) + '分' + fnTodou(iSeconds) + '秒';
+
+
+				oDiv.innerHTML = sTr;
+			}
+
+			fnTimeleft();
+
+			// 反复重用的定时器
+			setInterval(fnTimeleft, 1000);
+
+			// 函数转换，将小于10的数前面加个0 
+			function fnTodou(n){
+				if(n<10){
+					return '0'+ n;
+				}
+				else{
+					return n;
+				}
+			}
+
+		}
+	</script>
+
+	<style type="text/css">
+		div{
+			text-align: center;
+			color: gold;
+			font-size: 30px;
+		}
+	</style>
+
+</head>
+<body>
+	<div id="div1"></div>
+</body>
+</html>

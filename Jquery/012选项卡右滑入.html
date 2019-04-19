@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>008选项卡.html</title>
+
+	
+	<style type="text/css">
+		.btns input{
+			width: 100px;
+			height: 40px;
+			background-color: #ddd;
+			outline: none;
+		}
+
+		.btns .current{
+			background-color: gold;
+		}
+
+		.cons{
+			width: 500px;
+			height: 300px;
+			overflow: hidden; /* 切割*/
+			position: relative; /* 设置参考坐标*/ 
+		}
+
+		.slides{
+			width: 1500px;
+			height: 300px;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+
+		.cons .slides div{
+			width: 500px;
+			height: 300px;
+			background-color: gold;
+			text-align: center;
+			line-height: 300px;
+			font-size: 30px;
+			float: left;
+		}
+
+		.cons .active{
+			display: block; /* 展示出来*/
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+			$(function(){
+				var $btn = $('.btns input');
+				var $slides = $('.cons .slides');
+
+				$btn.click(function(){
+
+					// this 指的是元素的this，表示当前点击的对象
+					$(this).addClass('current').siblings().removeClass('current'); // sublings 选择同级的其他相同标签；
+
+					$slides.stop().animate({'left':-500*$(this).index()});
+				})
+
+
+			})
+
+	</script>
+
+</head>
+<body>
+	<div class="btns">
+		<input type="button" name="" value="01" class="current">
+		<input type="button" name="" value="02">
+		<input type="button" name="" value="03">
+	</div>
+
+	<div class="cons">
+		<div class="slides">
+			<div>选项卡一的内容1</div>
+			<div>选项卡二的内容2</div>
+			<div>选项卡三的内容3</div>
+		</div>		
+	</div>
+
+</body>
+</html>

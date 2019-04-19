@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>003加入购物车动画.html</title>
+	<style type="text/css">
+		.chart{
+			width: 150px;
+			height: 50px;
+			border:2px solid #000;
+			text-align: center;
+			line-height: 50px;
+			float: right;
+			margin-top: 50px;
+			margin-right: 100px;
+		}
+
+		.chart em{
+			font-style: normal; /* 去掉斜线*/
+			color: red;
+			font-weight: bold;
+		}
+
+		.add{
+			width: 100px;
+			height: 50px;
+			background-color: pink;
+			border: 0;
+			color: #fff;
+			float: left;
+			margin-top: 300px;
+			margin-left: 300px;
+
+		}
+
+		.point{
+			width: 16px;
+			height: 16px;
+			background-color: red;
+			position: fixed; /*固定定位*/
+			left: 0;
+			top: 0;
+			display: none; /*默认隐藏*/
+			z-index: 999;  /* 放在最上面*/
+			border-radius: 50%;
+		}
+
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+
+			var $chart = $('.chart');
+			var $count = $('.chart em');
+			var $btn = $('.add');
+			var $point = $('.point');
+
+			// 获取按钮的宽和高
+			var $w01 = $btn.outerWidth();
+			var $h01 = $btn.outerHeight();
+
+			// 获取购物车的宽和高
+			var $w02 = $chart.outerWidth();
+			var $h02 = $chart.outerHeight();
+
+			$btn.click(function(){
+
+				var oPos01 = $btn.offset(); /* 按钮的绝对位置*/
+				var oPos02 = $chart.offset();   /* 购物车的绝对位置*/
+
+				//将点定位在按钮中间  parseInt转换成整数 减去圆点本身的宽度一半
+				$point.css({'left':oPos01.left+parseInt($w01/2)-8, 'top':oPos01.top+parseInt($h01/2)-8});
+				$point.show();
+
+				$point.stop().animate({'left':oPos02.left+parseInt($w02/2)-8, 'top':oPos02.top+parseInt($h02/2)-8},800,function(){
+						$point.hide(); /* 隐藏小红点*/
+						var iNum = $count.html(); /* 读取里面的内容*/
+						$count.html(parseInt(iNum)+1);  /* 写入新的数字*/
+				});
+
+			})
+
+
+		})
+
+
+	</script>
+</head>
+<body>
+	<div class="chart">购物车<em>0</em></div>
+	<input type="button" name="" value="加入购物车" class="add">
+	<div class="point"></div>
+</body>
+</html>

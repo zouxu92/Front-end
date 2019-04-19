@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>008选项卡.html</title>
+
+	
+	<style type="text/css">
+		.btns input{
+			width: 100px;
+			height: 40px;
+			background-color: #ddd;
+		}
+
+		.btns .current{
+			background-color: gold;
+		}
+
+		.cons div{
+			width: 500px;
+			height: 300px;
+			background-color: gold;
+			display: none; /* 默认隐藏*/
+			text-align: center;
+			line-height: 300px;
+			font-size: 30px;
+		}
+
+		.cons .active{
+			display: block; /* 展示出来*/
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+			$(function(){
+				var $btn = $('.btns input');
+				var $div = $('.cons div');
+
+				$btn.click(function(){
+
+					// this 指的是元素的this，表示当前点击的对象
+					$(this).addClass('current').siblings().removeClass('current'); // sublings 选择同级的其他相同标签；
+
+					// $(this).index()  就是当前选中的div选项卡
+					$div.eq( $(this).index()).addClass('active').siblings().removeClass('active');
+				})
+
+
+
+			})
+
+	</script>
+
+</head>
+<body>
+	<div class="btns">
+		<input type="button" name="" value="01" class="current">
+		<input type="button" name="" value="02">
+		<input type="button" name="" value="03">
+	</div>
+
+	<div class="cons">
+		<div class="active">选项卡一的内容1</div>
+		<p>123456</p>
+		<div>选项卡二的内容2</div>
+		<div>选项卡三的内容3</div>		
+	</div>
+
+</body>
+</html>

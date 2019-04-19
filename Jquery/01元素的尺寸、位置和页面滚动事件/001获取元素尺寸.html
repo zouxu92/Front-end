@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>001获取元素尺寸.html</title>
+	<style type="text/css">
+		.box{
+			width: 200px;
+			height: 200px;
+			padding:20px;
+			border:10px solid #000;
+			margin: 20px;
+		}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+
+			var $div = $('.box');
+			/*
+			width()、height()    获取元素width和height  
+			innerWidth()、innerHeight()  包括padding的width和height  
+			outerWidth()、outerHeight()  包括padding和border的width和height  
+			outerWidth(true)、outerHeight(true)   包括padding和border以及margin的width和height
+			*/
+
+			// 获取元素width和height
+			console.log($div.width());
+			console.log($div.height());
+
+			// 包括padding的width和height  
+			console.log($div.innerWidth());
+			console.log($div.innerHeight());
+
+			// 包括padding和border的width和height  
+			console.log($div.outerWidth());
+			console.log($div.outerHeight());
+
+			// 包括padding和border以及margin的width和height
+			console.log($div.outerWidth(true));
+			console.log($div.outerHeight(true));
+
+		})
+
+
+	</script>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>

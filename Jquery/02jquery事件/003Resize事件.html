@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>003Resize事件</title>
+	<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		
+		$(window).resize(function(){
+			// 获取当前窗口的宽度
+			var $w = $(window).width();
+			// 将title宽度显示出来
+			document.title = $w;
+			/*alert($w);*/
+		});
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>005元素属性操作</title>
+
+	<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+
+
+			// prop() 读取/设置 属性
+			var $a = $('.link');
+			var $img = $('#img01')
+
+			//读取a 的class属性, 没有设置属性时读取为空
+			console.log($a.prop('class')); 
+
+			// 获取的是图片的绝对地址
+			console.log($img.prop('src'));
+
+			//设置属性
+			$a.prop({'href':'https://www.google.com', 'title':'google'});
+
+
+			// html() 取出或设置html内容
+			console.log($a.html()); 
+
+
+
+
+		})
+		
+
+	</script>
+</head>
+<body>
+	<a href="#" class="link">这是一个链接</a>
+	<img src="../images/002.png" id="img01" alt="diannao">
+</body>
+</html>

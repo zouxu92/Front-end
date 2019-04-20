@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>006jQuery循环</title>
+	<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+
+			var $li = $('.list li');
+
+			// 全部设置背景颜色
+			// $li.class({'backgroundColor':'gold'});
+			$li.each(function(i){
+				//	alert($(this).html());  会执行8次1~8
+				// alert(i); 通过传参数获取索引值
+				// $(this).index() 获取当前索引值
+
+				if($(this).index()%2==0){
+					$(this).css({'backgroundColor':'pink'});
+				}
+
+			})
+
+		})
+
+	</script>
+</head>
+<body>
+	<ul class="list">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+		<li>7</li>
+		<li>8</li>
+	</ul>
+	
+</body>
+</html>

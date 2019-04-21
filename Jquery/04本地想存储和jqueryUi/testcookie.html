@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript">
+		
+		// jquery 设置cookie
+		$.cookie('mycookie', '0k!',{expires:7, path:'/'});
+
+		// 读取cookie
+		var mycookie = $.cookie('mycookie');
+
+
+	</script>
+</head>
+<body>
+	<h1>测试页面</h1>
+</body>
+</html>

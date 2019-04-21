@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>001节点操作</title>
+	<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		
+
+		$(function(){
+			/*
+			1、append()和appendTo()：在现存元素的内部，从后面插入元素
+			2、prepend()和prependTo()：在现存元素的内部，从前面插入元素
+
+			*/
+			// 通过html的字符串的方式添加节点性能最高
+			//$('#div1').html($('#div1').html()+'<a herf="#">链接</a>');
+			
+
+			// 新建一个a元素，把他赋值给$a
+			$a = $('<a herf="#">链接</a>');
+
+			// $('#div1').append($a);
+
+			// 新建一个空的a元素
+			$a2 = $('<a>');
+
+
+			// 父元素内的后面放入子元素
+			$('.div1').append($a2);
+
+			// 子元素放到父元素内部的后面
+			$a.appendTo($('#div1'));
+
+
+			// 3、after()和insertAfter()：在现存元素的外部，从后面插入元素
+			$h2 =$('<h2>这是一个h2标题</h2>');
+			$('.div1').after($h2);
+
+			// 4、before()和insertBefore()：在现存元素的外部，从前面插入元素
+			$h3 =$('<h3>这是一个h3标题</h3>');
+			$('.div1').before($h3);
+
+
+		})
+
+	</script>
+
+</head>
+<body>
+	<div class="div1" id="div1">
+		<h1>这是一个H1元素</h1>
+	</div>	
+</body>
+</html>

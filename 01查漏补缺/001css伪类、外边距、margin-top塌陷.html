@@ -1,0 +1,59 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+
+		.box1:hover{color:red}
+		.box2:before{content:'行首文字';}
+		.box3:after{content:'行尾文字';}
+
+		.box4{
+			height: 50px;
+			background-color: pink;
+		}
+
+		.box5{
+			height: 30px;
+			background-color: gold;
+		}
+
+		.box6{
+			height: 50px;
+			background-color: pink;
+/*			border: 1px solid #ddd;
+*/		}
+
+		.box7{
+			height: 30px;
+			background-color: gold;
+			/* border: 1px solid red; */
+			margin-top: 10px;
+		}
+
+	</style>
+</head>
+<body>
+	
+	<div class="box1">....</div>
+	<div class="box2">....</div>
+	<div class="box3">....</div>
+	<br />
+	
+	<!-- 外边距合并的例子 -->
+	<div class="box4">
+		<div class="box5">
+		</div>
+	</div>
+	
+	<!-- margin-top 塌陷例子 -->
+	<div class="box6">
+		<div class="box7"></div>
+	</div>
+
+
+</body>
+</html>

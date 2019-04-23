@@ -3,6 +3,6 @@
 }
 
 .errop_tip{
-	display: none;
 	color: red;
+	display: block;
 }

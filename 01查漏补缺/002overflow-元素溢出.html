@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>overflow</title>
+    <style type="text/css">
+
+        .father{
+            height: 100px;
+            background-color: pink;
+            border: 1px solid #ddd;
+            /*overflow: hidden;  只显示出p的第一行*/
+            /*overflow: scroll; 有滚动条*/
+            /*overflow: auto; */
+            overflow:  auto;
+            color: red;
+
+        }
+
+        .father01{
+            color: green;
+        }
+
+        p{
+            color: inherit; /* 继承父级的颜色属性*/
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="father">
+        <p>1、visible 默认值。内容不会被修剪，会呈现在元素框之外。</p>
+        <p>2、hidden 内容会被修剪，并且其余内容是不可见的，此属性还有清除浮动、清除margin-top塌陷的功能。</p>
+        <p>3、scroll 内容会被修剪，但是浏览器会显示滚动条以便查看其余的内容。</p>
+        <p>4、auto 如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。</p>
+        <p>5、inherit 规定应该从父元素继承 overflow 属性的值。</p>
+    </div>
+
+    <br />
+
+    <div class="father01">
+        <p>父级属性的颜色设置成green</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>003元素定位position</title>
+    <style type="text/css">
+        body{
+            margin:0;
+        }
+
+        .father{
+            /*height: 30px;*/
+            background-color: pink;
+            margin-top: 100px;
+            border: 1px solid #000;
+            position: relative;
+           /* left: 50px;*/
+            top:100px;
+            /*text-align: center;*/
+
+        }
+
+        /* p{
+            margin: 0px;
+            background-color: gold;
+            position: absolute;
+            right: 50px;
+            top: 100px;
+        }*/
+
+        .child{
+            height: 50px;
+            width: 100px;
+            background-color: green;
+            position: fixed;
+            bottom: 100px;
+            left: 50%;
+            margin-left: -50px;
+        }
+
+        .child2{
+            height: 20px;
+            width: 20px;
+            background-color: blue;
+            /*
+            position: relative;
+            top: 50px;
+            会覆盖在文档流的上方，
+            元素所占据的文档流的位置不变，元素本身相对文档流的位置进行偏移
+            */
+
+            position: absolute;
+            top: 50px;
+            /*会覆盖在文档流的上方,但原来的文档流位置清除*/
+
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="child2"></div>
+        <p>relative 生成相对定位元素，元素所占据的文档流的位置不变，元素本身相对文档流的位置进行偏移 <br />
+        absolute 生成绝对定位元素，元素脱离文档流，不占据文档流的位置，可以理解为漂浮在文档流的上方，相对于上一个设置了相对或者绝对或者固定定位的父级元素来进行定位，如果找不到，则相对于body元素进行定位。<br />
+        fixed 生成固定定位元素，元素脱离文档流，不占据文档流的位置，可以理解为漂浮在文档流的上方，相对于浏览器窗口进行定位。<br />
+        static 默认值，没有定位，元素出现在正常的文档流中，相当于取消定位属性或者不设置定位属性<br />
+        inherit 从父元素继承 position 属性的值</p>
+
+        <div class="child"></div>
+    </div>
+
+
+</body>
+</html>
